@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+  
+  --font-sans: "Sora", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(#1c16380d 1px, transparent 1px),
+    linear-gradient(90deg, #1c16380d 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse at 50% 30%, #000 30%, transparent 75%);
+}
+
+.caret { display:inline-block; width:8px; height:1em; background:#ff9a4d; vertical-align:-2px; animation:blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity:0; } }
