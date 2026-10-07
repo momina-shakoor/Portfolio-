@@ -1,85 +1,96 @@
-import type { ReactNode } from "react";
+function About() {
+  return (
+    <div className="border-b border-black bg-amber-50 flex flex-col lg:flex-row justify-center items-center py-12 sm:py-16 lg:py-20 px-5 sm:px-8 gap-10 lg:gap-0">
 
-function About(){
+      {/* Left */}
+      <div className="w-full lg:w-1/2 max-w-2xl lg:pl-12 xl:pl-20">
+        <h1 className="font-extrabold text-3xl">About Me</h1>
 
-    const lines: string[] = [
-        'const developer = {',
-        '  name: "Momina Shakoor",',
-        '  stack: ["PostgreSQL", "Express", "React", "Node"],',
-        '  focus: "fast, accessible web apps",',
-        '  openToWork: true,',
-        '};',
-        '',
-        '> npm run hire-me',
-    ];
+        <div className="flex items-start justify-start py-8 sm:py-10 gap-6 sm:gap-8">
+          
+          <div>
+            <h1 className="text-3xl text-[#6d3df5]">4</h1>
+            <h2 className="text-gray-600 text-sm sm:text-base">
+              Core Technologies
+            </h2>
+          </div>
 
-    function colorize(line: string): ReactNode {
-        if(line.startsWith(">")) return <span className="text-[#7aa2ff]">{line}</span>;
-        return line.split(/("[^"]*")|\b(const|true)\b/g).filter(Boolean).map((p, i) =>
-            p.startsWith('"') ? <span key={i} className="text-[#ffa45c]">{p}</span>
-    : p === "const" || p === "true" ? <span key={i} className="text-white font-semibold">{p}</span>
-    : p
-  );
+          <div>
+            <h1 className="text-3xl text-[#f24400]">∞</h1>
+            <h2 className="text-gray-600 text-sm sm:text-base">
+              Things to Build
+            </h2>
+          </div>
 
-    }
-    return(
+          <div>
+            <h1 className="text-3xl text-[#2f6bff]">1</h1>
+            <h2 className="text-gray-600 text-sm sm:text-base">
+              Developer
+            </h2>
+            <h2 className="text-gray-600 text-sm sm:text-base">
+              Getting Better Every Day
+            </h2>
+          </div>
 
-       <div className="flex flex-col items-center justify-center gap-12 border-b border-black bg-amber-50 px-6 py-12 sm:px-10 md:px-16 lg:flex-row lg:gap-10 lg:px-20 xl:px-32">
-  
-  {/* Left side */}
-  <div className="w-full max-w-2xl lg:w-[50%]">
-    <h1 className="p-2 text-[#6d3df5]">
-      Available for new projects
-    </h1>
-
-    <p className="text-4xl font-extrabold leading-tight text-[#1c1638] sm:text-5xl lg:text-6xl">
-      I build fast, reliable web apps from database to browser.
-    </p>
-
-    <p className="py-4 text-[#001958]">
-      Hi, I'm Momina Shakoor, a full-stack developer working with
-      PostgreSQL, Express, React and Node. I turn product ideas into
-      clean, tested software.
-    </p>
-
-    <div className="flex flex-wrap gap-3">
-      <button className="cursor-pointer rounded-md bg-[#6d3df5] px-4 py-3 text-md text-white transition-colors hover:bg-[#e8590c]">
-        See my work
-      </button>
-
-      <button className="cursor-pointer rounded-md border border-gray-800 px-4 py-3 text-md text-gray-800 transition-colors hover:border-[#6d3df5] hover:text-[#6d3df5]">
-        Contact me
-      </button>
-    </div>
-  </div>
-
-
-  {/* Terminal */}
-  <div className="w-full max-w-2xl min-w-0 lg:w-[50%]">
-    <div className="overflow-hidden rounded-xl border-2 border-[#1c1638] bg-[#001441] shadow-[8px_8px_0_#e8590c]">
-
-      <div className="flex items-center gap-2 border-b border-white/15 px-4 py-3">
-        <span className="h-3 w-3 rounded-full bg-[#ff9a4d]" />
-        <span className="h-3 w-3 rounded-full bg-[#5b8cff]" />
-        <span className="h-3 w-3 rounded-full bg-[#9b7bff]" />
-
-        <span className="ml-3 font-mono text-xs text-white/60">
-          developer.js
-        </span>
+        </div>
       </div>
 
-      <pre className="min-h-16.25 whitespace-pre-wrap p-5 font-mono text-[13px] leading-7 text-[#e8e4f5] sm:text-sm">
-        {lines.map((line, i) => (
-          <div key={i}>{colorize(line) || "\u00A0"}</div>
-        ))}
-        <span className="caret" />
-      </pre>
 
+      {/* Right */}
+      <div className="w-full lg:w-1/2 max-w-2xl">
+        
+        <div className="text-gray-600 py-3 border-b border-gray-600">
+          <p className="mb-2">
+            I'm a full-stack developer focused on building fast, reliable and
+            maintainable web applications with PostgreSQL, Express, React and
+            Node.js
+          </p>
+
+          <p className="mt-3">
+            I enjoy turning ideas into clean, functional products with readable
+            code, accessible interfaces and thoughtful user experience. I'm
+            continuously learning, improving my skills and looking for
+            opportunities to build software that solves real problems.
+          </p>
+        </div>
+
+        <div className="py-3">
+          <h1 className="font-semibold text-blue-950">
+            Tech I work with
+          </h1>
+
+          <div className="flex flex-wrap items-start gap-3 sm:gap-4 py-3">
+            
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              PostgreSQL
+            </div>
+
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              Express
+            </div>
+
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              React
+            </div>
+
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              Node.js
+            </div>
+
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              Tailwind CSS
+            </div>
+
+            <div className="border border-[#6d3df5] p-3 rounded-lg text-[#6d3df5] hover:cursor-pointer hover:text-[#f24400] hover:border-[#f24400]">
+              Typescript
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-
-</div>
-    )
+  );
 }
 
-export default About
+export default About;
