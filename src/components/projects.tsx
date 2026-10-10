@@ -28,7 +28,7 @@ const projects: Project[] = [
 
 function Projects() {
   return (
-    <section className="border-b border-black bg-amber-50 px-5 py-16 sm:px-8 lg:px-12">
+    <section className="border-b border-black bg-amber-100 px-5 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-6xl">
         <h1 className="mb-8 text-3xl font-extrabold text-gray-900 sm:text-4xl">
           Projects
