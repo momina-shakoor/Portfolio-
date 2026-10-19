@@ -1,5 +1,5 @@
-import utis from "../assets/utis.png"
-import marfatalquran from "../assets/marfatalquran.png"
+import utis from "../assets/utis.png";
+import marfatalquran from "../assets/marfatalquran.png";
 
 type Project = {
   title: string;
@@ -37,7 +37,7 @@ function Projects() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {projects.map((project) => (
             <article
-              className="mx-auto w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-shadow hover:shadow-lg"
+              className="mx-auto  font-mono w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-shadow hover:shadow-lg"
               key={project.title}
             >
               <a
@@ -63,9 +63,7 @@ function Projects() {
               </a>
 
               <div className="p-5 sm:p-6">
-                <h2 className="text-xl text-gray-900">
-                  {project.title}
-                </h2>
+                <h2 className="text-xl text-gray-900">{project.title}</h2>
 
                 <p className="mt-2 text-sm leading-6 text-gray-600 sm:text-base">
                   {project.description}

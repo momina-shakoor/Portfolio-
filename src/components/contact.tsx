@@ -8,11 +8,11 @@ function Contact() {
               Let&apos;s build something
             </h1>
 
-            <p className="mt-4 leading-7 text-stone-600">
+            <p className="mt-4 leading-7 font-mono text-stone-600">
               Tell me about your project. I reply within one working day.
             </p>
 
-            <div className="mt-6 flex flex-col gap-3">
+            <div className="font-mono mt-6 flex flex-col gap-3">
               <a
                 href="mailto:mominashakoorf@gmail.com"
                 className="text-amber-800 underline-offset-4 hover:underline"
@@ -48,7 +48,7 @@ function Contact() {
             <div>
               <label
                 htmlFor="name"
-                className="mb-1 block text-sm font-medium text-stone-700"
+                className="mb-1 font-mono block text-sm font-medium text-stone-700"
               >
                 Name
               </label>
@@ -58,14 +58,14 @@ function Contact() {
                 name="name"
                 placeholder="Your name"
                 required
-                className="w-full rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
+                className="w-full font-mono rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
               />
             </div>
 
             <div>
               <label
                 htmlFor="email"
-                className="mb-1 block text-sm font-medium text-stone-700"
+                className="mb-1 font-mono block text-sm font-medium text-stone-700"
               >
                 Email
               </label>
@@ -75,14 +75,14 @@ function Contact() {
                 name="email"
                 placeholder="Your email"
                 required
-                className="w-full rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
+                className="w-full font-mono rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
               />
             </div>
 
             <div>
               <label
                 htmlFor="details"
-                className="mb-1 block text-sm font-medium text-stone-700"
+                className="mb-1 font-mono block text-sm font-medium text-stone-700"
               >
                 Project details
               </label>
@@ -92,7 +92,7 @@ function Contact() {
                 rows={5}
                 placeholder="Tell me about your project"
                 required
-                className="w-full resize-y rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
+                className="w-full font-mono resize-y rounded-lg border border-stone-300 px-4 py-3 outline-none focus:border-amber-600 focus:ring-2 focus:ring-amber-100"
               />
             </div>
 
@@ -105,7 +105,7 @@ function Contact() {
           </form>
         </section>
 
-        <footer className="py-6 text-center text-sm text-stone-500">
+        <footer className="py-6 font-mono text-center text-sm text-stone-500">
           © {new Date().getFullYear()} Momina Shakoor. All rights reserved.
         </footer>
       </div>
