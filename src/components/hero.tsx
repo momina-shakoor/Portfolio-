@@ -50,11 +50,27 @@ function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <button className="cursor-pointer rounded-md bg-[#6d3df5] px-4 py-3 text-md text-white transition-colors hover:bg-[#e8590c]">
+          <button
+            className="cursor-pointer rounded-md bg-[#6d3df5] px-4 py-3 text-md text-white transition-colors hover:bg-[#e8590c]"
+            onClick={() =>
+              document.getElementById("projects")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }
+          >
             See my work
           </button>
 
-          <button className="cursor-pointer rounded-md border border-gray-800 px-4 py-3 text-md text-gray-800 transition-colors hover:border-[#6d3df5] hover:text-[#6d3df5]">
+          <button
+            className="cursor-pointer rounded-md border border-gray-800 px-4 py-3 text-md text-gray-800 transition-colors hover:border-[#6d3df5] hover:text-[#6d3df5]"
+            onClick={() =>
+              document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
+            }
+          >
             Contact me
           </button>
         </div>
